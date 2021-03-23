@@ -14,7 +14,7 @@ mongoose.connect(
         findByIdAndDelete:true
     },
         (req,res)=>{console.log("connected...");})
-
+app.use(express.json());
 app.get('/blog', function(req,res){
     Blog.find()
     .then(blog=>{

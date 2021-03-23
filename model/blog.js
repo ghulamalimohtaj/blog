@@ -1,6 +1,6 @@
-const mongoose = require('congoose');
+const mongoose = require('mongoose');
 
-const  Blog = new mongoose.schema({
+const  Blog = mongoose.Schema({
     title:String,
     body:String,
     author:String,
